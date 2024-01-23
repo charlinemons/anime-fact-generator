@@ -10,11 +10,18 @@
   </head>
   <body>
     <div class="container">
-      <!-- header -->
-      <header>
-        <h1>Welcome to the <br />AI anime fact generator</h1>
+      <header class="header">
+        <div>
+          <h1>Anime fact generator</h1>
+          <p>
+            Coded with 💚 by
+            <a href="https://www.linkedin.com/in/charline-mons" target="_blank"
+              >Charline Mons</a
+            >
+          </p>
+        </div>
+        <img src="src\bulbasaur.png" alt="bulbasaur" />
       </header>
-      <!-- main content -->
       <main>
         <div class="form-container">
           <form id="fact-generator-form">
@@ -27,19 +34,14 @@
               required
               autocomplete="off"
             />
-            <input type="submit" class="submit-button" />
+            <input type="submit" value="Generate fact" class="submit-button" />
           </form>
           <div class="hint">i.e: Death Note, Naruto or Jujustu Kaisen</div>
         </div>
         <div class="fact hidden" id="fact"></div>
       </main>
-
       <footer>
-        This was coded by
-        <a href="https://www.linkedin.com/in/charline-mons" target="_blank"
-          >Charline Mons</a
-        >
-        and is
+        This is
         <a
           href="https://github.com/charlinemons/anime-fact-generator"
           target="_blank"
