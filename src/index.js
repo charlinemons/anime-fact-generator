@@ -14,7 +14,7 @@ function generateFact(event) {
   let apiKey = "1fabbbt6e694149ea2da3obbe200ebf2";
   let prompt = `User instructions: Generate one rare random fact about ${instructionsInput.value}`;
   let context =
-    "You mission is to generate one rare fact about the user instruction anime. Make sure to follow the user instructions. Do not include a title to the fact. Sign the fact with 'SheCodes AI' inside a <strong> element at the end of the fact and NOT at the beginning, separate with a <br />";
+    "You mission is to generate one rare fact about the user instruction anime. Make sure to follow the user instructions. Do not include a title to the fact. Sign the fact with 'SheCodes AI' inside a <strong> element at the end of the fact and NOT at the beginning. Separate the signature from the fact with a <br />";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let factElement = document.querySelector("#fact");
