@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI anime fact generator</title>
   </head>
@@ -14,7 +15,7 @@
       </header>
       <!-- main content -->
       <main>
-        <form>
+        <form id="fact-generator-form">
           <input
             class="instructions"
             type="text"
@@ -25,12 +26,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="generator">
-          "I am Justice! I protect the innocent and those who fear evil. I'm the
-          one who will become the god of a new world that everyone desires!"
-          <br />
-          Light Yagami
-        </div>
+        <div class="fact" id="fact"></div>
       </main>
 
       <footer>

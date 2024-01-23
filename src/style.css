@@ -69,13 +69,14 @@ form {
   padding: 14px 24px;
 }
 
-.generator {
+.fact {
   font-size: 16px;
   background-color: var(--white);
   padding: 20px;
   line-height: 2;
   border-left: 3px solid var(--lettuce);
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  text-align: left;
 }
 
 footer {
