@@ -16,11 +16,6 @@ header {
   margin-bottom: 30px;
 }
 
-.container {
-  margin: 120px auto;
-  max-width: 600px;
-}
-
 h1 {
   text-align: center;
   font-weight: 800;
@@ -38,14 +33,26 @@ a:hover {
   color: var(--forest);
 }
 form {
-  padding: 30px;
-  margin-bottom: 30px;
-  background-color: var(--white);
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+.form-container {
+  background-color: var(--white);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  padding: 15px 20px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+  text-align: left;
 }
 
 .instructions {
@@ -79,8 +86,27 @@ form {
   text-align: left;
 }
 
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

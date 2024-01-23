@@ -16,19 +16,22 @@
       </header>
       <!-- main content -->
       <main>
-        <form id="fact-generator-form">
-          <input
-            class="instructions"
-            id="instructions"
-            type="text"
-            placeholder="Enter an anime"
-            autofocus
-            required
-            autocomplete="off"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="fact" id="fact"></div>
+        <div class="form-container">
+          <form id="fact-generator-form">
+            <input
+              class="instructions"
+              id="user-instructions"
+              type="text"
+              placeholder="Enter an anime"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Death Note, Naruto or Jujustu Kaisen</div>
+        </div>
+        <div class="fact hidden" id="fact"></div>
       </main>
 
       <footer>
